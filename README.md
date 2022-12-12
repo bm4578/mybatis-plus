@@ -3,6 +3,11 @@ PS：因为SpringBoot项目每次都需要搭建测试环境，又因为每个�
 本项目整合了SpringBoot+mybatis-plus+pagehelper(分页插件)+knife4j(原版swagger)+druid+mysql
 ，其目的是为了更快的写增删改查。
 
+功能如下：
+1. 快速进入测试页面
+![](https://raw.githubusercontent.com/bm4578/images/master/202212121740189.png)
+2. swagger页面
+![](https://raw.githubusercontent.com/bm4578/images/master/202212121743222.png)
 ### 快速生成增删改查使用说明
 1. 在idea中使用EasyCodeMybatisCodeHelper插件
 ###  swagger使用说明
