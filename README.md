@@ -28,3 +28,21 @@ public class SysArticleController {
   }
 }
 ```
+### 热部署说明
+PS:停滞五秒会自动构建项目
+1. setting>
+
+![](https://raw.githubusercontent.com/bm4578/images/master/202212151106605.png)
+2.   windows: ctrl+Alt+Shift+/
+     
+     Mac: command+option+Shift+/
+![](https://raw.githubusercontent.com/bm4578/images/master/202212151100506.png)
+     点击注册表，勾选以下内容。
+![](https://raw.githubusercontent.com/bm4578/images/master/202212151100216.png)
+3. 默认不触发重启的目录列表，也可以从yml中修改
++ /META-INF / maven
++ /META-INF /resources
++ /resources
++ /static
++ /public
++ /templates
