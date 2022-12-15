@@ -1,22 +1,27 @@
 package xyz.onlytype.mybatisplus.config.web;
 
+import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.validation.annotation.Validated;
 import xyz.onlytype.mybatisplus.MybatisPlusApplication;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import java.net.InetAddress;
 
-@Component
+@Validated
+@ConfigurationProperties(prefix = "server")
+@Data
 public class InitProject implements ApplicationRunner{
 
     private static final Logger log = LoggerFactory.getLogger(MybatisPlusApplication.class);
-
-    @Value("${server.port}")
-    private String port;
+    @Max(value = 1288,message = "端口限制，不能超过最大值")
+    @Min(value = 100,message = "端口限制，不能低于最小值")
+    private int port;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {

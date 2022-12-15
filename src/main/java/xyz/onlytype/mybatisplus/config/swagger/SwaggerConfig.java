@@ -43,7 +43,7 @@ public class SwaggerConfig {
                 .version("1.0")
                 //描述
                 .description("API文档")
-                .contact(new Contact("codetype","http://localhost:8089/doc.html","2109961182@qq.com"))
+                .contact(new Contact("白也","http://localhost:8089/doc.html","m15319631269@163.com"))
                 .build();
     }
 

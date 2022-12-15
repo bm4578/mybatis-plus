@@ -1,6 +1,7 @@
 #端口号配置
 server:
-  port: 8089
+  port: 1266
+
 spring:
   #数据库
   datasource:
