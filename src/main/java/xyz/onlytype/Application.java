@@ -1,17 +1,16 @@
-package xyz.onlytype.mybatisplus;
+package xyz.onlytype;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import xyz.onlytype.mybatisplus.config.web.InitProject;
+import xyz.onlytype.config.web.InitProject;
 
 @SpringBootApplication
 @EnableConfigurationProperties(InitProject.class)
-public class MybatisPlusApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(MybatisPlusApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }

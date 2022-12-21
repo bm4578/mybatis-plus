@@ -1,4 +1,4 @@
-package xyz.onlytype.mybatisplus;
+package xyz.onlytype;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,7 +8,7 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 
 @SpringBootTest
-class MybatisPlusApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

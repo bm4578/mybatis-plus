@@ -1,4 +1,4 @@
-package xyz.onlytype.mybatisplus.config.swagger;
+package xyz.onlytype.config.swagger;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
